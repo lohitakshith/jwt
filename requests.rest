@@ -1,0 +1,11 @@
+POST http://localhost:4848/api/login
+Content-Type: application/json
+
+{
+    "email": "havighna@gmail.com"
+}
+
+###
+
+GET http://localhost:4848/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhhdmlnaG5hQGdtYWlsLmNvbSIsImlhdCI6MTU5NDczMzI0NywiZXhwIjoxNTk0NzMzMjc3fQ.P_nGD9KmlqapZgebMfGW5weilP20huxkr_-sI6J-AVA
