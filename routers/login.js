@@ -6,7 +6,7 @@ router.post("/login", (req, res, next) => {
     JWT.sign({
         email: req.body.email
     }, process.env.SECRET_ACCESS_TOKEN, {
-        expiresIn: 30
+        expiresIn: 3600
     }, (err, encoded) => {
         if (!err) {
             res.json({
